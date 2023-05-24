@@ -95,10 +95,10 @@ function generate_text() {
     text_width = ctx.measureText(text).width
     text_height = ctx.measureText(text).actualBoundingBoxAscent
 
-    if (text_width * scale > window.outerWidth - 32) { 
-        text = default_text
-        generate_text()
-    }
+    // if (text_width * scale > window.outerWidth - 32) { 
+    //     text = default_text
+    //     generate_text()
+    // }
 
     ctx.fillText(text, 0, text_height)
 
