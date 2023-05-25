@@ -140,7 +140,7 @@ function animate() {
 }
 
 // start :)
-document.onload = () => {
+document.addEventListener('DOMContentLoaded', () => {
     init()
     animate()
-}
+})
